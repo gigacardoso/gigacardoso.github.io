@@ -1,0 +1,100 @@
+/*--------------------------------------------------
+  Bootstrap.less v1
+  --------------------------------------------------
+  Colors
+        -------------------------------------------------- */
+/*--------------------------------------------------
+  Mixins
+        -------------------------------------------------- */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.container {
+  width: 940px;
+  zoom: 1;
+}
+.container:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.container:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #444;
+  color:#B1B1B1;
+}
+h1,
+h2,
+h3 {
+  font-family: "futura-pt", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #555;
+}
+#header img {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#content {
+  margin-top: 6em;
+}
+#content #links {
+  text-align: center;
+}
+/*
+#content #links a {
+  font-size: 13px;
+  line-height: 15px;
+  border-radius: 10px;
+  padding: 21px 8px 1px 8px;
+  border: 4px solid #B1B1B1;
+}
+#content #links a:hover {
+  border-color: #FFCC02;
+}*/
+#who {
+  text-align: center;
+  margin-bottom: 1em;
+  padding-bottom: 2.5em;
+}
+#who img {
+  width: 150px;
+  border-radius: 40px;
+}
+#who h1 {
+  font-size: 3em;
+  line-height: 1.2em;
+  margin: 0.5em 0 0.2em;
+}
+#who h2 {
+  font-family: Georgia, Times, "Times new roman", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #999;
+  margin: 0em;
+  line-height: 1.6em;
+}
