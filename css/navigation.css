@@ -4,7 +4,7 @@ nav {
   left: 0;
   background-color: black;
   width: 100%;
-  height: 95px;
+  height: 5em;
   z-index: 1000;
   min-width: 240px;
 }
@@ -41,7 +41,7 @@ ul {
 
 .content {
   width: 90%;
-  min-width: 375px;
+  /*min-width: 375px;*/
   max-width: 850px;
   height: 100%;
   margin: auto;
@@ -49,12 +49,16 @@ ul {
 
 #menu {
   position: relative;
-  top:50%;
+  top:2em;
   float:right;
 }
 
 #logo {
-  float:left;
+  float: left;
+}
+
+#logo img {
+  max-height:100%;
 }
 
 #separator {
