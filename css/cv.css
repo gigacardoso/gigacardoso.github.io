@@ -1,4 +1,21 @@
 
-.floor-3{
+.cv-floor{
   background: #B3CE4A;
+}
+
+#content-floor-cv {
+  margin-top: 15%;
+  text-align: center;
+}
+
+#content-floor-cv a {
+    text-decoration: none;
+}
+
+#what-cv h1 {
+  font-size: 3em;
+  color: black;
+  line-height: 1.2em;
+  margin: 0.5em 0 0.2em;
+  text-decoration: underline;
 }
