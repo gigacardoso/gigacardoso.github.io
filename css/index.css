@@ -4,3 +4,16 @@
 .floor {
   margin-top: 95px;
 }
+
+.arrow {
+	position: absolute;
+	top: 40%;
+}
+
+.right {
+	right:10px;
+}
+
+.left {
+	left:10px;
+}

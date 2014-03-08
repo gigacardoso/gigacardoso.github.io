@@ -22,13 +22,13 @@
 				<div id="menu">
 					<ul>
 						<li class="menu-button">
-							<a class="ascensorLink ascensorLink1">Home</a>
+							<a class="home">Home</a>
 						</li>
 						<li class="menu-button">
-							<a class="ascensorLink ascensorLink2">Hobbies</a>
+							<a class="hobbies1">Hobbies</a>
 						</li>
 						<li class="menu-button">
-							<a class="ascensorLink ascensorLink3">CV</a>
+							<a class="cv">CV</a>
 						</li>
 					</ul>
 				</div>
@@ -64,31 +64,75 @@
 				</section>
 
 			</div>
-			<div class="floor floor-2"><span class="text">Floor 2</span></div>
-			<div class="floor floor-3"><span class="text">Floor 3</span></div>
+			<div class="floor floor-2">
+				<span class="text">Hobby 1</span>
+				<div class="link-to-floor right arrow">
+					<img src="images/right.png" alt="right" class="hobbies2" />
+				</div>
+			</div>
+			<div class="floor floor-3">
+				<span class="text">Hobby 2</span>
+				<div class="link-to-floor right arrow">
+					<img src="images/right.png" alt="right" class="hobbies3" />
+				</div>
+				<div class="link-to-floor left arrow">
+					<img src="images/left.png" alt="left" class="hobbies1" />
+				</div>
+			</div>
+			<div class="floor floor-4">
+				<span class="text">Hobby 3</span>
+				<div class="link-to-floor left arrow">
+					<img src="images/left.png" alt="left" class="hobbies2" />
+				</div>
+			</div>
+			<div class="floor floor-5">
+				<span class="text">CV</span>
+			</div>
 		</div>
 		<script src="js/jquery-2.1.0.min.js"></script>
 		<script src="js/jquery.ascensor.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script>
-			var ascensor = $('#ascensorBuilding').ascensor();
+			var ascensor = $('#ascensorBuilding').ascensor({direction: [[0,0],[1,0],[1,1],[1,2],[2,0]]});
 			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
+			var ascensorFloorName = ['home','hobbies','hobbies2','hobbies3','cv']
+			var floors = {};
+			floors['home'] = 0;
+			floors['hobbies1'] = 1;
+			floors['hobbies2'] = 2;
+			floors['hobbies3'] = 3;
+			floors['cv'] = 4;
 
-			$(".links-to-floor li").click(function(event, index) {
-				ascensorInstance.scrollToFloor($(this).index());
+			$(".links-to-floor li").click(function(event) {
+				var myClass = $(this).children().attr("class");
+				ascensorInstance.scrollToFloor(floors[myClass]);
 			});
 
-			$(".links-to-floor img").click(function(event, index) {
-				ascensorInstance.scrollToFloor($(this).index());
+			$(".link-to-floor").click(function(event) {
+				var myClass = $(this).children().attr("class");
+				ascensorInstance.scrollToFloor(floors[myClass]);
 			});
+
+			$(".links-to-floor img").click(function(event) {
+				ascensorInstance.scrollToFloor(0);
+			});
+
+			$('.links-to-floor img').css('cursor','pointer');
 
 			$('.links-to-floor li').css('cursor','pointer');
 
 			$(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
 			ascensor.on("scrollStart", function(event, floor){
+				var a = floor.to
+				if (floor.to > 0 && floor.to < 4) {
+					a =1
+				};
+				if (floor.to == 4) {
+					a=2
+				};
 				$(".links-to-floor li").removeClass("selected");
-				$(".links-to-floor li:eq("+floor.to+")").addClass("selected");
+				$(".links-to-floor li:eq("+a+")").addClass("selected");
 			});
 
 			$(".direction").click(function() {
