@@ -1,0 +1,33 @@
+
+.floor-1{
+  background: #444;
+  font-size: 14px;
+  color:#B1B1B1;
+}
+
+#content {
+  margin-top: 6em;
+  text-align: center;
+}
+
+
+#who {
+  margin-bottom: 1em;
+  padding-bottom: 2.5em;
+}
+#who img {
+  width: 150px;
+  border-radius: 40px;
+}
+#who h1 {
+  font-size: 3em;
+  line-height: 1.2em;
+  margin: 0.5em 0 0.2em;
+}
+#who h2 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.1em;
+  margin: 0em;
+  line-height: 1.6em;
+}
