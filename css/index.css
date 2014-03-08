@@ -1,6 +1,10 @@
 
 *{font-family: 'Raleway', sans-serif;}
 
+body {
+	background: #000;
+}
+
 .floor {
   margin-top: 95px;
 }

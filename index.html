@@ -1,88 +1,183 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-        <meta charset="utf-8">
-        <title>Daniel Cardoso</Title>
-        <link rel="icon"
-            href="images/logos/DCweb-black2.png" />
-        <link rel="stylesheet" href="css/index.css">
-        <meta name="viewport" content="user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1">
-        <style>
-        *{margin: 0;padding: 0;}
-        body{font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;}
-        .floor .text {color: white;font-size: 40px;font-weight: 500;text-align: center;position: absolute;top: 50%;left: 50%;-moz-transform: translateX(-50%) translateY(-50%);-webkit-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);}
-        .floor-1{background: #F9B233;}.floor-2{background: #71B5E5;}.floor-3{background: #B3CE4A;}
-        .floor-4{background: #EB5D45;}
-        ul {list-style: none;}
-        li a {padding: 3px 6px; display: inline-block;background: #eee;border-radius:3px;margin-bottom:2px;color: #777;}
-        li a:hover{cursor:pointer; background:#fefefe;}
-        .links-to-floor{position: absolute;top: 20px;left: 20px;}
-        .prev-next-links{position: absolute;top: 20px;right: 20px;}
-        .direction-links li a{border-radius: 0;}
-        .up {position: absolute;bottom: 75px;right: 50px;}
-        .down {position: absolute;bottom: 25px;right: 50px;}
-        .left {position: absolute;bottom: 50px;right: 60px;}
-        .right {position: absolute;bottom: 50px;right: 32px;}
-        .selected a{color: white;background:#4fade3;}
-        .selected a:hover{color: white;background:#4fade3;}
-        </style>
-</head>
-<body>
+	<meta charset="utf-8">
+	<title>Daniel Cardoso</Title>
+		<link rel="icon" href="images/logos/DCweb-black2.png" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/hobies.css" />
+		<link rel="stylesheet" href="css/navigation.css" />
+		<link rel="stylesheet" href="css/cv.css" />
+		<link rel="stylesheet" href="css/floor.css" />
+		<meta name="viewport" content="user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1"/>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
 
-        <div id="ascensorBuilding">
-            <div class="floor floor-1"><span class="text">Floor 1</span></div>
-            <div class="floor floor-2"><span class="text">Floor 2</span></div>
-            <div class="floor floor-3"><span class="text">Floor 3</span></div>
-            <div class="floor floor-4"><span class="text">Floor 4</span></div>
-        </div>
+		<nav id="navigationMap" class="links-to-floor" style="display: block;">
+			<section class="content">
+				<div id="logo">
+					<img class="ascensorLink ascensorLink1" src="images/logos/DCweb-white2.png" width="150px" alt="logo" />
+				</div>
+				<div id="menu">
+					<ul>
+						<li class="menu-button">
+							<a class="home">Home</a>
+						</li>
+						<li class="menu-button">
+							<a class="hobbies1">Hobbies</a>
+						</li>
+						<li class="menu-button">
+							<a class="cv">CV</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="separator" style="clear:both;"></section>
+		</nav>
 
-        <section id="header">
-            <section class="content">
-                <img src="images/logos/DCweb-black2.png" width="150px" alt="logo" />
-                <section id="menu" class="ascensor">
-                    <span class="info-text">Home</span>
-                    <span class="info-text">Hobbies</span>
-                    <span class="info-text">CV</span>
-                </section>
-            </section>
-            <section id="separator"></section>
-        </section>
-        <section id="content">
-                <section id="who">
-                        <img src="https://en.gravatar.com/userimage/27387223/32ea8a3b14c53fc68b3b586a8ba5526a.jpg?size=250" alt="Daniel Cardoso" />
-                        <h1>Daniel Cardoso</h1>
-                        <h2>
-                          Portuguese//Sofware Developer//World Traveler
-                       </h2>
-                </section>
-                <section id="links">
-                  <p>
-                    <a href="mailto:daniel.cardoso18@live.com" target="_blank"><img src="images/Email.png" class="" alt="Mail" class="image" /></a>
-                    <a href="https://twitter.com/giga_cardoso" target="_blank"><img src="images/Twitter.png" class="" alt="Twitter" class="image" /></a>
-                    <a href="https://plus.google.com/+DanielCardoso91" target="_blank"><img src="images/GooglePlus.png" class="" alt="Google+" class="image" /></a>
-                    <a href="http://instagram.com/giga_cardoso" target="_blank"><img src="images/Instagram.png" class="" alt="Instagram" class="image" /></a>
-                    <a href="http://www.linkedin.com/in/danielcardoso91" target="_blank"><img src="images/Linkedin.png" class="" alt="Linkedin" class="image" /></a>
-                    <a href="http://github.com/gigacardoso" target="_blank"><img src="images/Github.png" class="" alt="Github" class="image" /></a>
-                    <a href="http://www.youtube.com/user/GigaCardos0" target="_blank"><img src="images/Youtube.png" class="" alt="Youtube" class="image" /></a>
-                    <a href="http://gigacardoso.tumblr.com/" target="_blank"><img src="images/Tumblr.png" class="" alt="Tumblr" class="image" /></a>
-                    <!-- a href="http://stackoverflow.com/users/2118942/daniel-cardoso"><img src="images/fc-webicon-stackoverflow-m.png" class="image" class="" alt="Stack Overflow" /></a -->
-                  </p>
-                </section>
+		<div id="ascensorBuilding">
+			<div class="floor home-floor">
+				<section id="content">
+					<section id="who">
+						<img src="https://en.gravatar.com/userimage/27387223/32ea8a3b14c53fc68b3b586a8ba5526a.jpg?size=250" alt="Daniel Cardoso" />
+						<h1>DANIEL CARDOSO</h1>
+						<h2>
+							Portuguese//Sofware Developer//World Traveler
+						</h2>
+					</section>
+					<section id="links">
+						<p>
+							<a href="mailto:daniel.cardoso18@live.com" target="_blank"><img src="images/Email.png" class="" alt="Mail" class="image" /></a>
+							<a href="https://twitter.com/giga_cardoso" target="_blank"><img src="images/Twitter.png" class="" alt="Twitter" class="image" /></a>
+							<a href="https://plus.google.com/+DanielCardoso91" target="_blank"><img src="images/GooglePlus.png" class="" alt="Google+" class="image" /></a>
+							<a href="https://www.facebook.com/giga.cardoso" target="_blank"><img src="images/Facebook.png" class="" alt="Facebook" class="image" /></a>
+							<a href="http://instagram.com/giga_cardoso" target="_blank"><img src="images/Instagram.png" class="" alt="Instagram" class="image" /></a>
+							<a href="http://www.linkedin.com/in/danielcardoso91" target="_blank"><img src="images/Linkedin.png" class="" alt="Linkedin" class="image" /></a>
+							<a href="http://github.com/gigacardoso" target="_blank"><img src="images/Github.png" class="" alt="Github" class="image" /></a>
+							<a href="http://www.youtube.com/user/GigaCardos0" target="_blank"><img src="images/Youtube.png" class="" alt="Youtube" class="image" /></a>
+							<a href="http://gigacardoso.tumblr.com/" target="_blank"><img src="images/Tumblr.png" class="" alt="Tumblr" class="image" /></a>
+							<a href="http://stackoverflow.com/users/2118942/daniel-cardoso"><img src="images/fc-webicon-stackoverflow-m.png" class="image" class="" alt="Stack Overflow" /></a>
+						</p>
+					</section>
 
-        </section>
-        <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.approach.min.js"></script>
-    <script src="jquery['>=1.7'].js"></script>
-    <script src="jquery.ascensor.js"></script>
-    <script>
-      $('.ascensor').ascensor();
-    </script>
-</body>
-<script>
-    $(".info-text").approach({
-        "color":"red"
-    }, 100);
-  </script>
-</html>
+				</section>
+
+			</div>
+			<div class="floor hobby-floor hobby1">
+				<div class="link-to-floor right arrow">
+					<img src="images/right.png" alt="right" class="hobbies2" />
+				</div>
+				<section id="content-floor">
+					<section id="what">
+						<h1>HANDBALL</h1>
+						<img src="images/handball.jpg" alt="Handball" />
+					</section>
+				</section>
+			</div>
+			<div class="floor hobby-floor hobby2">
+				<div class="link-to-floor right arrow">
+					<img src="images/right.png" alt="right" class="hobbies3" />
+				</div>
+				<div class="link-to-floor left arrow">
+					<img src="images/left.png" alt="left" class="hobbies1" />
+				</div>
+				<section id="content-floor">
+					<section id="what">
+						<h1>TRAVELLING</h1>
+						<img src="images/travel.jpg" alt="Travel" />
+					</section>
+				</section>
+			</div>
+			<div class="floor hobby-floor hobby3">
+				<div class="link-to-floor right arrow">
+					<img src="images/right.png" alt="right" class="hobbies4" />
+				</div>
+				<div class="link-to-floor left arrow">
+					<img src="images/left.png" alt="left" class="hobbies2" />
+				</div>
+				<section id="content-floor">
+					<section id="what">
+						<h1>PROGRAMMING</h1>
+						<img src="images/code.png" alt="Programming" />
+					</section>
+				</section>
+			</div>
+			<div class="floor hobby-floor hobby4">
+				<div class="link-to-floor left arrow">
+					<img src="images/left.png" alt="left" class="hobbies3" />
+				</div>
+				<section id="content-floor">
+					<section id="what">
+						<h1>MUSIC</h1>
+						<img src="images/music.jpg" alt="Music" />
+					</section>
+				</section>
+			</div>
+			<div class="floor cv-floor">
+				<section id="content-floor-cv">
+					<section id="what-cv">
+						<a href="https://github.com/gigacardoso/gigacardoso.github.io/blob/master/data/DanielCardosoCV.pdf?raw=true" target="_blank"> <h1>DOWNLOAD</h1> </a>
+					</section>
+				</section>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script src="js/jquery.ascensor.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			var ascensor = $('#ascensorBuilding').ascensor({direction: [[0,0],[1,0],[1,1],[1,2],[1,3],[2,0]]});
+			var ascensorInstance = $('#ascensorBuilding').data('ascensor');
+			var ascensorFloorName = ['home','hobbies','hobbies2','hobbies3','cv']
+			var floors = {};
+			floors['home'] = 0;
+			floors['hobbies1'] = 1;
+			floors['hobbies2'] = 2;
+			floors['hobbies3'] = 3;
+			floors['hobbies4'] = 4;
+			floors['cv'] = 5;
+			var size = 5;
+
+			$(".links-to-floor li").click(function(event) {
+				var myClass = $(this).children().attr("class");
+				ascensorInstance.scrollToFloor(floors[myClass]);
+			});
+
+			$(".link-to-floor").click(function(event) {
+				var myClass = $(this).children().attr("class");
+				ascensorInstance.scrollToFloor(floors[myClass]);
+			});
+
+			$(".links-to-floor img").click(function(event) {
+				ascensorInstance.scrollToFloor(0);
+			});
+
+			$('.links-to-floor img').css('cursor','pointer');
+
+			$('.links-to-floor li').css('cursor','pointer');
+
+			$(".link-to-floor").css('cursor','pointer');
+
+			$(".links-to-floor li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+
+			ascensor.on("scrollStart", function(event, floor){
+				var a = floor.to
+				if (floor.to > 0 && floor.to < size) {
+					a =1
+				};
+				if (floor.to == size) {
+					a=2
+				};
+				$(".links-to-floor li").removeClass("selected");
+				$(".links-to-floor li:eq("+a+")").addClass("selected");
+			});
+
+			$(".direction").click(function() {
+				ascensorInstance.scrollToDirection($(this).data("direction"));
+			});	
+
+		</script>
+
+	</body>
+	</html>
