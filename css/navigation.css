@@ -26,6 +26,7 @@ nav a:hover {
 }
 
 ul {
+  padding: 0;
   list-style: none;
 }
 #navigationMap ul li {
@@ -39,7 +40,9 @@ ul {
 }
 
 .content {
-  width: 850px;
+  width: 90%;
+  min-width: 375px;
+  max-width: 850px;
   height: 100%;
   margin: auto;
 }
