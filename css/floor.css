@@ -1,6 +1,7 @@
 #content-floor {
   margin-top: 8em;
   text-align: center;
+  z-index: 3;
 }
 
 #what {
@@ -18,4 +19,5 @@
   font-size: 3em;
   line-height: 1.2em;
   margin: 0.5em 0 0.2em;
+  color: white;
 }
