@@ -1,0 +1,47 @@
+.controls {
+  /*margin-top: 1em;
+  padding: 0.5em;
+  overflow: auto;*/
+}
+
+.ai-button, #feedback-container {
+  font-size: 1em;
+}
+
+#run-button-container {
+  float: right;
+}
+
+#hint-button-container, #feedback-container {
+  float: left;
+}
+
+#feedback-container {
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+.myButton {
+	background-color:#B1B1B1;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#7f7f7f;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
