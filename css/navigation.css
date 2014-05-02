@@ -10,7 +10,7 @@ nav {
 }
 
 nav a {
-  color: #673d13;
+  color: rgba(255, 228, 19, 0.6);
   line-height: 22px;
   text-decoration: none;
   text-transform: uppercase;
