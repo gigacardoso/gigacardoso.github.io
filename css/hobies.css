@@ -1,34 +1,34 @@
 .hobby1{
-  background: #666;
-  /*background: url(../images/handball.jpg) no-repeat center center fixed; 
+  /*background: #666;*/
+  background: url(../images/handball.jpg); /*no-repeat center center fixed;*/ 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
 }
 .hobby2{
-  background: #777;
-  /*background: url(../images/travel.jpg) no-repeat center center fixed; 
+  /*background: #777;*/
+  background: url(../images/travel.jpg);  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
 }
 .hobby3{
-  background: #888;
-  /*background: url(../images/code.png) no-repeat center center fixed; 
+  /*background: #888;*/
+  background: url(../images/code.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
 }
 .hobby4{
-  background: #999;
-  /*background: url(../images/music.jpg) no-repeat center center fixed; 
+  /*background: #999;*/
+  background: url(../images/music.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;*/
+  background-size: cover;
 }
 
 html { 
