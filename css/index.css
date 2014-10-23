@@ -1,5 +1,8 @@
 
-*{font-family: 'Raleway', sans-serif;}
+*{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
 
 body {
 	background: #000;
@@ -20,4 +23,23 @@ body {
 
 .left {
 	left:10px;
+}
+
+#underconstruction{
+	position: absolute;
+	color:white;
+	background:red;
+	top: 50px;
+	left:-87px;
+	width:300px;
+	text-align:center;
+	z-index: 50000;
+-webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.3);
+-moz-box-shadow:    2px 2px 5px 0px rgba(50, 50, 50, 0.3);
+box-shadow:         2px 2px 5px 0px rgba(50, 50, 50, 0.3);
+	
+	-webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg);  
+    -o-transform: rotate(-45deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5); 
 }
